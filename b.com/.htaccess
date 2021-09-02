@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    <IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "https://rueckwand24.com"
+    Header always set Access-Control-Allow-Methods "GET,POST,PATCH,PUT,DELETE,OPTIONS"
+    Header always set Access-Control-Allow-Headers "*"
+    Header always set Access-Control-Allow-Credentials "*"
+    Header set Access-Control-Allow-Credentials true
+  </IfModule>
+</IfModule>
